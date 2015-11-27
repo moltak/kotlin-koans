@@ -13,10 +13,7 @@ fun todoTask7(): Nothing = TODO(
     references = { JavaCode7.Person("Alice", 29) }
 )
 
-class Person
-
-fun task7(): List<Person> {
-    todoTask7()
-    return listOf(/*Person("Alice", 29), Person("Bob", 31)*/)
+fun task7(): List<JavaCode7.Person> {
+    return listOf(JavaCode7.Person("Alice", 29), JavaCode7.Person("Bob", 31))
 }
 
