@@ -6,12 +6,9 @@ interface Expr
 class Num(val value: Int) : Expr
 class Sum(val left: Expr, val right: Expr) : Expr
 
-fun eval(e: Expr): Int =
-        when (e) {
-            is Num -> todoTask6(e)
-            is Sum -> todoTask6(e)
-            else -> throw IllegalArgumentException("Unknown expression")
-        }
+fun eval(e: Expr): Int {
+    return JavaCode6().eval(e)
+}
 
 fun todoTask6(expr: Expr): Nothing = TODO(
     """
